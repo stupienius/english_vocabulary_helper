@@ -61,6 +61,13 @@ main {
     background-color: #87009a;
 }
 
+.lib p{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    color: white;
+}
+
 footer {
     position: relative;
     height: 7%;
