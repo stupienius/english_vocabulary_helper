@@ -1,13 +1,13 @@
 let model = 1;
 
-let lib = ["hello","apple","angry"];
-let word = document.getElementById("word");
+let word = ["hello","apple","angry"];
+let lib = document.getElementById("lib");
 reload();
 
 
 function reload(){
-    for(let i=0;i<lib.length;i++){
-        word.innerHTML += lib[i]+ "<br>" ;
+    for(let i=0;i<word.length;i++){
+        lib.innerHTML += "<p>"+word[i]+"</p>" ;
     }
 }
 
