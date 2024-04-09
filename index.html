@@ -11,9 +11,9 @@
         <header>
             <h1>vocabulary helper</h1>
             <div class="select">
-                <button>library</button>
-                <button>test</button>
-                <button>new</button>
+                <button onclick="modelChange()">library</button>
+                <button onclick="modelChange()">test</button>
+                <button onclick="modelChange()">new</button>
             </div>
         </header>
         <main>
@@ -25,7 +25,12 @@
 
         </footer>
     </div>
-    
+
+    <script>
+        function modelChange(){
+            alert("hello");
+        }
+    </script>
     <script src="index.js"></script>
 </body>
 </html>

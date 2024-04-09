@@ -25,9 +25,10 @@ body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #e3d9a2;
+    background-color: #574a05;
     z-index: -1;
 }
+
 
 header {
     position: relative;
@@ -54,11 +55,21 @@ header h1{
     gap: 20px;
 }
 
+.select button{
+    background-color: #000;
+    color: wheat;
+}
+
+.select button:hover{
+    background-color: #b82525;
+    color: rgb(151, 124, 74);
+}
+
 main {
     position: relative;
     height: 83%;
     width: 100%;
-    background-color: #87009a;
+    background-color: #9412a5;
 }
 
 .lib p{
@@ -68,8 +79,9 @@ main {
     font-size: 2rem;
     text-align: center;
     padding: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
+
 
 footer {
     position: relative;
