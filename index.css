@@ -57,13 +57,9 @@ header h1{
 
 .select button{
     background-color: #000;
-    color: wheat;
+    color: rgb(255, 255, 255);
 }
 
-.select button:hover{
-    background-color: #b82525;
-    color: rgb(151, 124, 74);
-}
 
 main {
     position: relative;
@@ -74,7 +70,7 @@ main {
 
 .lib p{
     position: relative;
-    height: 30px;
+    height: 50px;
     width: 100%;
     font-size: 2rem;
     text-align: center;

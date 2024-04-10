@@ -1,23 +1,25 @@
-let model = 1;
+let currentModel = 1;
 
-let word = ["hello","apple","angry"];
+let word = ["hello", "apple", "angry"];
 let lib = document.getElementById("lib");
+
 reload();
 
-
-function reload(){
-    for(let i=0;i<word.length;i++){
-        lib.innerHTML += `<p onclick = "wordDetail('${word[i]}')">${word[i]}</p>` ;
+function reload() {
+    lib.innerHTML = "";
+    for (let i = 0; i < word.length; i++) {
+        lib.innerHTML += `<p onclick="wordDetail()">${word[i]}</p>`;
     }
 }
 
+
 console.log(lib);
 
-function wordDetail(index) {
-    console.log(index);
+function wordDetail() {
+    console.log("index");
 }
 
-// function modelChange(a){
-//     model = a;
-//     console.log(a);
-// }
+function changeModel(a) {
+    currentModel = a;
+    console.log(a);
+}
