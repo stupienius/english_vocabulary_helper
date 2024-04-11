@@ -1,5 +1,7 @@
 let currentModel = 1;
 
+console.log("hello");
+
 let word = ["hello", "apple", "angry"];
 let lib = document.getElementById("lib");
 
