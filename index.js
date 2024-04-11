@@ -3,7 +3,6 @@ let currentModel = 1;
 let word = ["hello", "apple", "angry"];
 let lib = document.getElementById("lib");
 
-reload();
 
 function reload() {
     lib.innerHTML = "";
