@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body {
+    height: 500px;
+    width: 100wv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.phone {
+    position: relative;
+    height: 350px;
+    width: 200px;
+    background-color: black;
+}
+
+button {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
