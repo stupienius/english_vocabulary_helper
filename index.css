@@ -25,22 +25,44 @@ body {
     width: 200px;
     background-color: black;
 }
-.select{
+
+main {
+    position: relative;
+}
+
+header{
+    position: relative;
     height: 50px;
     width: 100%;
     background-color: hsl(0, 0%, 30%);
-    display: flex;
-    justify-content: center;
-    gap: 5px;
 }
 
-.seclet button {
+header h4 {
     position: absolute;
-    bottom: 2px;
-    height: 10px;
-    width: auto;
-    padding: 3px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    top: 0px;
     color: white;
+}
+
+.select {
+    position: absolute;
+    bottom: 3px;
+    height: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.select button {
+    height: 18px;
+    width: auto;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
 }
 
 #test {
