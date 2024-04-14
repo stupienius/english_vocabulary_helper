@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>engilsh_helper</title>
+    <title>english_vocabulary_helper</title>
 </head>
 <body>
-
     <div class="phone">
-    <button id="test" onclick="print(1)">test</button>
-    <main>
         <header>
-            <h4>vacabulary heaper</h4>
+            <h1>vocabulary helper</h1>
             <div class="select">
-                <button onclick="changeMoled(1)">add</button>
-                <button onclick="changeMoled(2)">word</button>
-                <button onclick="changeMoled(3)">test</button>
+                <button onclick="changeModel(1)">library</button>
+                <button onclick="changeModel(2)">test</button>
+                <button onclick="changeModel(3)">new</button>
             </div>
         </header>
-        <div class="content">
-            <div class="lib" onscroll="handleScroll()"></div>
-            <div class="add"></div>
-            <div class="quize"></div>
-        </div>
-    </main>  
+        <main>
+            <div class="lib" id="lib">
+            </div>
+        </main>
+        <footer>
+        </footer>
     </div>
     <script src=".\index.js"></script>
 </body>

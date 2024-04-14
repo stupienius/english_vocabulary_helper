@@ -3,107 +3,85 @@
     padding: 0;
     border: 0;
     outline: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
-html{
+html {
+    height: 100vh;
+    width: 100vw;
     font-size: 14px;
 }
 
 body {
-    height: 500px;
-    width: 100wv;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fa45fe;
 }
 
 .phone {
     position: relative;
-    height: 350px;
-    width: 200px;
-    background-color: black;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #574a05;
+    z-index: -1;
 }
 
-main {
-    position: relative;
-}
 
-header{
+header {
     position: relative;
-    height: 50px;
+    height: 10%;
     width: 100%;
-    background-color: hsl(0, 0%, 30%);
+    background-color: #3d9c0a;
 }
 
-header h4 {
-    position: absolute;
-    height: 30px;
+header h1{
+    position: relative;
+    height: 75%;
     width: 100%;
     text-align: center;
-    font-size: 1.3rem;
-    top: 0px;
-    color: white;
+    color: #000;
+
 }
 
 .select {
-    position: absolute;
-    bottom: 3px;
-    height: 18px;
+    position: relative;
+    height: 25%;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
-.select button {
-    height: 18px;
-    width: auto;
-    font-size: 1.1rem;
-    border-radius: 2px;
-    color: rgb(0, 0, 0);
+.select button{
+    background-color: #000;
+    color: rgb(255, 255, 255);
 }
 
-.content {
+
+main {
     position: relative;
-    height: 300px;
+    height: 83%;
     width: 100%;
+    background-color: #9412a5;
 }
 
-.content div {
-    position: absolute;
-    max-height: 100%;
-    width: 100%;
-}
-
-.content .lib {
-    overflow-y: auto;
-}
-.content .lib::-webkit-scrollbar {
-    /* display: none; */
-    width: 5px;
-} 
-.content .lib::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background: #888; 
-}
-
-
-p {
+.lib p{
     position: relative;
-    height: 20px;
-    text-align: left;
-    font-size: 1rem;
-    padding: 2px 0 2px 5px;
-    margin: 0px 1px 1px 3px;
-    background-color: hsl(0, 0%, 50%);
-    color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 255, 255);
 }
 
-#test {
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    z-index: 1;
+
+footer {
+    position: relative;
+    height: 7%;
+    width: 100%;
+    background-color: #aaf03a;
 }

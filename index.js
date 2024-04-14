@@ -1,41 +1,27 @@
-let model = 1;
+let currentModel = 1;
 
-class word {
+console.log("hello");
 
-}
-
-let words = ["hello","apple","banana","tiger",
-            "elephant","ant","height","good","nice",
-            "great","fun","hi","content","finally","last",
-            "apple","banana","tiger",
-            "elephant","ant","height","good","nice",
-            "great","fun","hi","content","finally",];
-
-const lib = document.querySelector(".lib");
+let word = ["hello", "apple", "angry"];
+let lib = document.getElementById("lib");
 
 reload();
 
-function changeMoled(index){
-    console.log(index);
-    model = index ;
-    if(model === 2){
-        reload();
-    }else{
-        lib.style.display = "none";
-    }
-}
-
-function reload(){
+function reload() {
     lib.innerHTML = "";
-    for(let i=0;i<words.length;i++){
-        lib.innerHTML += `<p onclick="detail(${words[i]})">${words[i]}</p>`;
+    for (let i = 0; i < word.length; i++) {
+        lib.innerHTML += `<p onclick="wordDetail()">${word[i]}</p>`;
     }
-    lib.style.display = "block";
 }
 
 
-                                             
+console.log(lib);
 
-function print(a){
-    console.log("hello"+a);
+function wordDetail() {
+    console.log("index");
+}
+
+function changeModel(a) {
+    currentModel = a;
+    console.log(a);
 }
