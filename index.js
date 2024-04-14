@@ -15,10 +15,10 @@ function reload() {
 }
 
 
-console.log(lib);
+                                             
 
-function wordDetail() {
-    console.log("index");
+function print(a){
+    console.log("hellow"+a);
 }
 
 function changeModel(a) {
