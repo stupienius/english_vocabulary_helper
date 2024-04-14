@@ -9,7 +9,7 @@ let words = ["hello","apple","banana","tiger",
             "great","fun","hi","content","finally","last",
             "apple","banana","tiger",
             "elephant","ant","height","good","nice",
-            "great","fun","hi","content","finally","last"];
+            "great","fun","hi","content","finally",];
 
 const lib = document.querySelector(".lib");
 
