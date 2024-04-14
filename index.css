@@ -65,8 +65,45 @@ header h4 {
     color: rgb(0, 0, 0);
 }
 
+.content {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.content div {
+    position: absolute;
+    max-height: 100%;
+    width: 100%;
+}
+
+.content .lib {
+    overflow-y: auto;
+}
+.content .lib::-webkit-scrollbar {
+    /* display: none; */
+    width: 5px;
+} 
+.content .lib::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #888; 
+}
+
+
+p {
+    position: relative;
+    height: 20px;
+    text-align: left;
+    font-size: 1rem;
+    padding: 2px 0 2px 5px;
+    margin: 0px 1px 1px 3px;
+    background-color: hsl(0, 0%, 50%);
+    color: white;
+}
+
 #test {
     position: absolute;
     bottom: 3px;
     right: 3px;
+    z-index: 1;
 }
