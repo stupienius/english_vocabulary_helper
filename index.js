@@ -37,5 +37,5 @@ function reload(){
                                              
 
 function print(a){
-    console.log("hello"+a);
+    console.log("hellow"+a);
 }
