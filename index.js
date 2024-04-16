@@ -13,8 +13,6 @@ let words = ["hello","apple","banana","tiger",
 
 const lib = document.querySelector(".lib");
 
-reload();
-
 function changeMoled(index){
     console.log(index);
     model = index ;
