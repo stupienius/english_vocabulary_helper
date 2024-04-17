@@ -63,6 +63,15 @@ header h4 {
     font-size: 1.1rem;
     border-radius: 2px;
     color: rgb(0, 0, 0);
+    background-color: #b3b3b3;
+}
+
+.select button:hover{
+    background-color: #ffffff;
+}
+
+.select button:active{
+    background-color: #888;
 }
 
 .content {
