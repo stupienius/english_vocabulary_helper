@@ -7,7 +7,7 @@ class word {
         this.ch = ch;
         this.eg = eg;
     }
-    
+
 }
 
 let words = ["hello","apple","banana","tiger",
@@ -44,6 +44,12 @@ function reload(){
         lib.innerHTML += `<p onclick="detail(${words[i]})">${words[i]}</p>`;
     }
     lib.style.display = "block";
+}
+
+function detail(index){
+    lib.style.display = "none";
+    add.style.display = "none";
+    qui.style.display = "none";
 }
 
 
