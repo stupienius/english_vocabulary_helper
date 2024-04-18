@@ -1,9 +1,8 @@
 let model = 1;
 
 class word {
-    constructor(name,PoS,ch,eg){
+    constructor(name,ch,eg){
         this.name = name;
-        this.PoS = PoS;
         this.ch = ch;
         this.eg = eg;
     }
@@ -18,9 +17,12 @@ let words = ["hello","apple","banana","tiger",
             "great","fun","hi","content","finally","last"];
 
 const lib = document.querySelector(".lib");
+const list = document.querySelector(".list");
+
 const wel = document.querySelector(".welcome");
 const qui = document.querySelector(".quize");
 const add = document.querySelector(".add");
+
 
 function changeMoled(index){
     wel.style.display = "none";
@@ -28,10 +30,11 @@ function changeMoled(index){
     if(model === 1){
         qui.style.display = "none";
         lib.style.display = "none";
+        add.style.display = "block";
     }else if(model === 2){
-        reload();
         qui.style.display = "none";
         add.style.display = "none";
+        reload();
     }else if(model === 3){
         lib.style.display = "none";
         add.style.display = "none";
@@ -39,10 +42,11 @@ function changeMoled(index){
 }
 
 function reload(){
-    lib.innerHTML = "";
+    list.innerHTML = "";
     for(let i=0;i<words.length;i++){
-        lib.innerHTML += `<p onclick="detail('${words[i]}')">${words[i]}</p>`;
+        list.innerHTML += `<p onclick="detail('${words[i]}')">${words[i]}</p>`;
     }
+    console.log(list);
     lib.style.display = "block";
 }
 
@@ -51,11 +55,4 @@ function detail(index){
     add.style.display = "none";
     qui.style.display = "none";
     console.log(index);
-}
-
-
-                                             
-
-function print(a){
-    console.log("hello"+a);
 }

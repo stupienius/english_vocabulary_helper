@@ -84,16 +84,18 @@ header h4 {
     position: absolute;
     max-height: 100%;
     width: 100%;
+    display: none;
 }
 
 .content .welcome{
     position: absolute;
+    display: block;
     margin: 75px 50px 75px 50px;
     height: 50%;
     width: 50%;
 }
 
-.content h4{
+.welcome h4{
     position: relative;
     height: 25px;
     width: 100%;
@@ -104,21 +106,39 @@ header h4 {
     color: rgba(128, 128, 128, 0.151);
 }
 
-.content .lib {
-    display: none;
+
+.add h5{
+    color: #ffffff;
+    margin-top: 2px;
+    padding: 3px;
+}
+
+.add input{
+    width: 95%;
+    margin: 3px 5px 10px 5px; 
+}
+
+.add textarea{
+    width: 95%;
+    margin: 3px 5px 10px 5px; 
+}
+
+.list {
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    display: block;
     overflow-y: auto;
 }
-.content .lib::-webkit-scrollbar {
-    /* display: none; */
+.list::-webkit-scrollbar {
     width: 5px;
 } 
-.content .lib::-webkit-scrollbar-thumb {
+.list::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background: #888; 
 }
 
-
-p {
+.list p{
     position: relative;
     height: 20px;
     text-align: left;
@@ -129,9 +149,3 @@ p {
     color: white;
 }
 
-#test {
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    z-index: 1;
-}
