@@ -41,7 +41,7 @@ function changeMoled(index){
 function reload(){
     lib.innerHTML = "";
     for(let i=0;i<words.length;i++){
-        lib.innerHTML += `<p onclick="detail(${words[i]})">${words[i]}</p>`;
+        lib.innerHTML += `<p onclick="detail('${words[i]}')">${words[i]}</p>`;
     }
     lib.style.display = "block";
 }
@@ -50,6 +50,7 @@ function detail(index){
     lib.style.display = "none";
     add.style.display = "none";
     qui.style.display = "none";
+    console.log(index);
 }
 
 
