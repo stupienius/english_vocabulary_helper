@@ -21,7 +21,19 @@ const list = document.querySelector(".list");
 
 const wel = document.querySelector(".welcome");
 const qui = document.querySelector(".quize");
+
 const add = document.querySelector(".add");
+const w = document.getElementById("w");
+const ch = document.getElementById("ch");
+const eg = document.getElementById("eg");
+
+
+add.addEventListener("submit",function(){
+    w.value = "";
+    ch.value ="";
+    eg.value ="";
+
+});
 
 
 function changeMoled(index){
