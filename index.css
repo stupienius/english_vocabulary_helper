@@ -167,3 +167,54 @@ header h4 {
     background-color: hsl(0, 0%, 45%);
 }
 
+.quize .test{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test p{
+    height: 20px;
+    width: 10px;
+    padding: 3px;
+    color: white;
+}
+
+.test input{
+    height: 20px;
+    width: 60%;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+.quize .hint {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint .ch_hint {
+    position: relative;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: #b3b3b3;
+    display: block;
+}
+
+.hint .eg_hint {
+    position: relative;
+    height: 100px;
+    width: 90%;
+    border-radius: 3px;
+    background-color: #b3b3b3;
+    display: block;
+}
+

@@ -1,4 +1,4 @@
-let model = 1;
+let model;
 
 class word {
     constructor(name,ch,eg){
@@ -6,7 +6,6 @@ class word {
         this.ch = ch;
         this.eg = eg;
     }
-
 }
 
 let words = ["hello","apple","banana","tiger",
@@ -50,6 +49,7 @@ function changeMoled(index){
     }else if(model === 3){
         lib.style.display = "none";
         add.style.display = "none";
+        test();
     }
 }
 
@@ -66,5 +66,11 @@ function detail(index){
     lib.style.display = "none";
     add.style.display = "none";
     qui.style.display = "none";
+    console.log(index);
+}
+
+function test(){
+    qui.style.display = "block";
+    let index = Math.floor(Math.random()*words.length);
     console.log(index);
 }
